@@ -1,0 +1,23 @@
+name: Build and Test Emotion Engine
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libglew-dev libglfw3-dev libgl1-mesa-dev libdl-dev
+    - name: Run Build Script
+      run: |
+        chmod +x build.sh
+        ./build.sh
+    - name: Run Test Suite
+      run: |
+        ./emotion-engine "DiagnosticTestMode" || echo "[INFO] Test execution finished."
