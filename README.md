@@ -2,7 +2,6 @@
 
 **Universal Cross-Platform Software, Graphics & Application Interception Engine**
 
-[![GitHub Workflow Status](https://github.com/makergpt/emotion-engine/blob/main/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![C++17](https://img.shields.io/badge/C++-17-orange.svg?style=flat-square)]()
 [![OpenGL 3.3](https://img.shields.io/badge/Backend-OpenGL%203.3%20%2F%20Vulkan-green.svg?style=flat-square)]()
